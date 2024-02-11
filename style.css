@@ -1,0 +1,121 @@
+/* Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Bitter font */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Protest+Riot&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    font-family: sans-serif,"arial";
+}
+header{
+    width: 100vw;
+    background-color: lightblue;
+    margin: 0px;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+header h1{
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+    
+}
+header p{
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+}
+#logo-agape{
+    width: 200px;
+}
+nav{
+    display: flex;
+    background-color: rgb(68, 191, 233);
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
+.nav-iten{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+}
+.nav-iten:hover{
+    color: white;
+    transition: 300ms;
+}
+#home-nav{
+    color: white;
+}
+.principal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 30vw;
+    padding-right: 30vw;
+}
+.foto-sala-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.foto-sala {
+    width: 40vw; /* Alterado para porcentagem */
+    height: auto;
+    border-radius: 20px;
+    border: solid 2px black;
+    margin: 0px;
+}
+.descricao-foto {
+    font-size: 0.8em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 760px) {
+    #logo-agape{
+        width: 20vw;
+    }
+    header h1{
+        font-size: 6vw;
+    }
+    header p{
+        font-size: 2.5vw;
+    }
+}
+@media (max-width: 800px){
+    .principal{
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+    .foto-sala{
+        width: 70vw;
+    }
+}
