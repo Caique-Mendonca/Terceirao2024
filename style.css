@@ -108,6 +108,7 @@ nav ul{
         width: 30vw;
     }
 }
+/* Smartphones */
 @media (max-width: 767px) {
     .pagina{
         display: flex;
@@ -116,7 +117,7 @@ nav ul{
     }
     .foto-sala-section{
         border: none;
-        width: 30vw;
+        width: 90vw;
     }
 }
 @media (max-width: 760px) {
