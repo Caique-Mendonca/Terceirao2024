@@ -131,3 +131,8 @@ nav ul{
         font-size: 2.5vw;
     }
 }
+@media (max-width: 767px) {
+    .descricao-foto{
+        font-size: 0.5rem;
+    }
+}
