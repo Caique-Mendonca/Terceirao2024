@@ -11,11 +11,12 @@
 body{
     padding: 0px;
     margin: 0px;
-    width: 100vw;
+    width: 100%;
     font-family: sans-serif,"arial";
 }
 header{
-    width: 100vw;
+    max-width: 100%;
+    width: 100%;
     background-color: lightblue;
     margin: 0px;
     height: 15vh;
@@ -30,7 +31,6 @@ header h1{
     font-weight: bold;
     font-style: normal;
     font-size: 40px;
-    
 }
 header p{
     font-family: "Bitter", serif;
@@ -43,6 +43,8 @@ header p{
     width: 200px;
 }
 nav{
+    width: 100%;
+    max-width: 100%;
     display: flex;
     background-color: rgb(68, 191, 233);
     align-items: center;
@@ -69,12 +71,14 @@ nav ul{
 #home-nav{
     color: white;
 }
-.principal {
+.foto-sala-section {
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    padding-left: 30vw;
-    padding-right: 30vw;
+    width: 40vh;
+    height: 100vh;
+    border-right: black 1px solid;
+    padding: 10px;
 }
 .foto-sala-div{
     display: flex;
@@ -84,7 +88,7 @@ nav ul{
     margin-top: 10px;
 }
 .foto-sala {
-    width: 40vw; /* Alterado para porcentagem */
+    width: 100%; 
     height: auto;
     border-radius: 20px;
     border: solid 2px black;
@@ -98,7 +102,23 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
-
+/* Tablets */
+@media (max-width: 1024px) {
+    .foto-sala-section{
+        width: 30vw;
+    }
+}
+@media (max-width: 767px) {
+    .pagina{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .foto-sala-section{
+        border: none;
+        width: 30vw;
+    }
+}
 @media (max-width: 760px) {
     #logo-agape{
         width: 20vw;
@@ -108,14 +128,5 @@ nav ul{
     }
     header p{
         font-size: 2.5vw;
-    }
-}
-@media (max-width: 800px){
-    .principal{
-        padding-left: 20vw;
-        padding-right: 20vw;
-    }
-    .foto-sala{
-        width: 70vw;
     }
 }
