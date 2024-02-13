@@ -13,6 +13,7 @@ body{
     margin: 0px;
     width: 100%;
     font-family: sans-serif,"arial";
+    background-color: #ddddddf5;
 }
 .sticky{
     position: sticky;
@@ -85,6 +86,9 @@ nav ul{
 #home-nav{
     color: white;
 }
+.pagina{
+    display: flex;
+}
 .foto-sala-section {
     display: flex;
     align-items: flex-start;
@@ -116,6 +120,19 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
+.bem-vindo{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+}
+.bem-vindo h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+}
 /* Tablets */
 @media (max-width: 1024px) {
     .foto-sala-section{
@@ -126,12 +143,23 @@ nav ul{
 @media (max-width: 767px) {
     .pagina{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     .foto-sala-section{
         border: none;
         width: 90vw;
+        height: fit-content;
+    }
+    .foto-sala{
+        width: 85%;
+    }
+    .bem-vindo{
+        width: 100vw;
+    }
+    .bem-vindo h2{
+        font-size: 15px;
     }
 }
 @media (max-width: 760px) {
