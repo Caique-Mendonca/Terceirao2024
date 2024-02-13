@@ -1,0 +1,10 @@
+#galeria-nav{
+    color: white !important;
+}
+#home-nav{
+    color: black !important;
+}
+#home-nav:hover{
+    transition: 500ms;
+    color: white !important;
+}
